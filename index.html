@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Researcher personal website">
+  <title>Researcher | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="#">Researcher</a>
+
+      <nav class="language-switcher" aria-label="Language">
+        <button class="lang-btn active" data-lang="ja">JP</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">CN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero image -->
+    <section class="hero">
+      <img src="hero.png" alt="Research and communication concept">
+    </section>
+
+    <!-- Profile -->
+    <section class="profile-section">
+      <div class="profile-card">
+        <div class="profile-avatar" aria-label="Profile image placeholder">
+          <span>TN</span>
+        </div>
+
+        <div class="profile-info">
+          <p class="profile-label" data-i18n="profileLabel">研究者</p>
+          <h1 data-i18n="name">Your Name</h1>
+          <p class="profile-affiliation" data-i18n="affiliation">
+            ○○大学大学院 情報学研究科
+          </p>
+          <p class="profile-description" data-i18n="profileDescription">
+            自然言語処理・音声処理・大規模言語モデルを中心に、
+            人とAIの対話に関する研究を行っています。
+          </p>
+
+          <div class="profile-links">
+            <a href="#" aria-label="Google Scholar">Google Scholar</a>
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="Email">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main tabs -->
+    <section class="content-section">
+      <div class="tabs" role="tablist" aria-label="Main contents">
+        <button class="tab-btn active" role="tab" aria-selected="true"
+                aria-controls="research-panel" data-tab="research"
+                data-i18n="tabResearch">研究</button>
+        <button class="tab-btn" role="tab" aria-selected="false"
+                aria-controls="education-panel" data-tab="education"
+                data-i18n="tabEducation">教育</button>
+        <button class="tab-btn" role="tab" aria-selected="false"
+                aria-controls="engineer-panel" data-tab="engineer"
+                data-i18n="tabEngineer">エンジニア</button>
+      </div>
+
+      <!-- Research -->
+      <div id="research-panel" class="tab-panel active" role="tabpanel">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow" data-i18n="researchEyebrow">RESEARCH</p>
+            <h2 data-i18n="researchTitle">研究業績</h2>
+          </div>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <span class="publication-year">2026</span>
+            <div>
+              <h3>Title of Your Research Paper</h3>
+              <p class="authors">Your Name, Co-author A, Co-author B</p>
+              <p class="venue">International Conference / Journal</p>
+              <div class="item-links">
+                <a href="#">Paper</a>
+                <a href="#">PDF</a>
+                <a href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>Another Research Paper Title</h3>
+              <p class="authors">Your Name, Co-author A</p>
+              <p class="venue">Conference Name</p>
+              <div class="item-links">
+                <a href="#">Paper</a>
+                <a href="#">PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <span class="publication-year">2025</span>
+            <div>
+              <h3>Research Project / Workshop Title</h3>
+              <p class="authors">Your Name, Co-author A, Co-author B</p>
+              <p class="venue">Workshop / Symposium</p>
+              <div class="item-links">
+                <a href="#">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div id="education-panel" class="tab-panel" role="tabpanel" hidden>
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow" data-i18n="educationEyebrow">EDUCATION</p>
+            <h2 data-i18n="educationTitle">教育</h2>
+          </div>
+        </div>
+
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <span class="timeline-year">2026–</span>
+            <div>
+              <h3>○○大学 / ○○講座</h3>
+              <p data-i18n="education1">
+                プログラミング、情報科学、AIに関する講義・演習を担当。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">2025–2026</span>
+            <div>
+              <h3>○○教育プログラム</h3>
+              <p data-i18n="education2">
+                数学・アルゴリズム・データサイエンスなどの指導を担当。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-year">2024–</span>
+            <div>
+              <h3>Teaching / TA</h3>
+              <p data-i18n="education3">
+                学生向けの演習支援、研究指導、教材作成など。
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div id="engineer-panel" class="tab-panel" role="tabpanel" hidden>
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow" data-i18n="engineerEyebrow">ENGINEERING</p>
+            <h2 data-i18n="engineerTitle">エンジニア</h2>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-tag">AI / NLP</span>
+            <h3>Dialogue AI Project</h3>
+            <p data-i18n="project1">
+              大規模言語モデルを利用した対話システムの研究・開発。
+            </p>
+            <div class="tech-list">
+              <span>Python</span>
+              <span>LLM</span>
+              <span>API</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">WEB</span>
+            <h3>Web Application</h3>
+            <p data-i18n="project2">
+              Webアプリケーションの設計、実装、API連携を担当。
+            </p>
+            <div class="tech-list">
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-tag">DATA</span>
+            <h3>Data Analysis Tool</h3>
+            <p data-i18n="project3">
+              データ処理・分析・可視化のためのツールを開発。
+            </p>
+            <div class="tech-list">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Visualization</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
