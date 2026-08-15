@@ -1,15 +1,18 @@
 const translations = {
   ja: {
     profileLabel: "研究者",
-    name: "Your Name",
-    affiliation: "○○大学大学院 情報学研究科",
+    name: "Tatsu Kitamura",
+    affiliation: "筑波大学大学院 理工情報生命学術院 システム情報工学研究群 知能機能システム学位プログラム 博士後期課程",
     profileDescription:
-      "自然言語処理・音声処理・大規模言語モデルを中心に、人とAIの対話に関する研究を行っています。",
+      "Email: kitamura [dot] tatsu [dot] japan [at] gmail [dot] com",
     tabResearch: "研究",
     tabEducation: "教育",
-    tabEngineer: "エンジニア",
+    tabEngineer: "技術",
     researchEyebrow: "RESEARCH",
     researchTitle: "研究業績",
+    researchTitle1: "国際会議・査読付き",
+    researchTitle2: "国際会議・査読なし",
+    researchTitle3: "研究発表・全国大会",
     educationEyebrow: "EDUCATION",
     educationTitle: "教育",
     engineerEyebrow: "ENGINEERING",
@@ -23,7 +26,7 @@ const translations = {
   },
   en: {
     profileLabel: "RESEARCHER",
-    name: "Your Name",
+    name: "Tatsu Kitamura",
     affiliation: "Graduate School of Informatics, ○○ University",
     profileDescription:
       "My research focuses on natural language processing, speech processing, large language models, and human-AI interaction.",
@@ -45,7 +48,7 @@ const translations = {
   },
   zh: {
     profileLabel: "研究人员",
-    name: "Your Name",
+    name: "Tatsu Kitamura",
     affiliation: "○○大学 信息学研究科",
     profileDescription:
       "主要研究自然语言处理、语音处理、大语言模型以及人与AI之间的对话。",
